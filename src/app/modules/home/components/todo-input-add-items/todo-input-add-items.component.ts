@@ -8,7 +8,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 export class TodoInputAddItemsComponent {
   @Output() public emitTask = new EventEmitter()
 
-  public newTaskName: string = ''
+  public newTaskName = ''
 
   public submitTask(): void {
     if(!this.newTaskName.trim()) return
